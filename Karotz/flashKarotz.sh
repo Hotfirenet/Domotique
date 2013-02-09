@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+#https://raw.github.com/Hotfirenet/Domotique/master/Karotz/flashKarotz.sh
 
 cd /usr/karotz
 
@@ -14,5 +14,7 @@ if [CHECKMD5WIZZ = LIREMD5COMP]
 		/sbin/flash_eraseall /dev/mtd2
 		/sbin/nandwrite -pm /dev/mtd2 rootfs.wizz.120719r2.img.gz
 	fi
+	
+rm /usr/karotz/flashKarotz.sh
 	
 reboot	
